@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Supreme GDPS Demon Roulette</title>
+        <link rel="icon" type="image/png" href="assets/logo.png" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+        <style>
+        
+            .yt-thumb {
+                width: 196px !important;
+                height: 110px !important;
+            }
+
+            .demon-face {
+                width: 65px;
+                height: 65px;
+            }
+
+            #status-text {
+                font-size: 1.3em;
+                font-weight: 500;
+            }
+
+            .percent {
+                font-size: 0.7em !important;
+                font-weight: 400 !important;
+            }
+            
+        </style>
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Supreme GDPS Demon Roulette" />
+        <meta property="og:description"
+            content="Small and simple website that generates a random list of Supreme GDPS Demons!" />
+        <meta property="og:url" content="" />
+    </head>
+
+    <body>
+        <div class="columns is-centered is-vcentered mt-2">
+            <div class="column is-narrow">
+                <label class="checkbox is-unselectable">
+                    <input id="chk-main-list" type="checkbox" checked>
+                    Main List
+                </label>
+                <br>
+            <!-- <label class="checkbox is-unselectable"> -->
+                    <input id="chk-legacy-list" type="checkbox" onclick="return false;">
+                    Legacy (Broken)
+                </label> 
+                <br>
+                <a target="_blank" href="https://discord.gg/pAU42pbREb">Discord</a>
+                <br>
+                <a target="_blank" href="https://supremedemonlist.optimal7.repl.co/">Demonlist</a>
+                <br>
+            </div>
+            <div class="column is-half has-text-centered">
+                <h1 class="title">Supreme GDPS Demon Roulette 
+                    <span id="btn-help" class="icon is-small"><i data-feather="help-circle"></i></span></h1>
+
+            </div>
+            <div class="column is-narrow has-text-right">
+                <a id="btn-start" class="button is-success">Start</a>
+            </div>
+        </div>
+
+        <div id="help-modal" class="modal animate__animated animate__fadeIn" style="--animate-duration: 0.3s;">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="box">
+                    <div class="content">
+                        <p>
+                            The Supreme GDPS Demon Roulette is a challenge where you must go through
+                            as many demons as possible, with the challenge ending when you get 100% or give up,
+                            original made by Matcool.
+                        </p>
+                        <p>Idea by <a href="https://youtu.be/nv_9FkfGRsc">npesta</a>, site by <a href="https://github.com/matcool">matcool</a>, Supreme GDPS Version by Optimal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="usure-modal" class="modal important-modal animate__animated animate__fadeIn" style="--animate-duration: 0.3s;">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Are you sure?</p>
+                  </header>
+                <footer class="modal-card-foot">
+                    <button id="usure-yes" class="button is-danger">Yes</button>
+                    <button id="usure-no" class="button">No</button>
+                </footer>
+            </div>
+        </div>
+
+        <div id="demons" class="container mt-6">
+        </div>
+
+        <div style="margin-bottom: 500px;">
+            <!-- spacing -->
+        </div>
+        <script src="https://supremedemonlist.optimal7.repl.co/js/list.js"></script>
+        <script src="https://unpkg.com/bulma-toast@2.0.1/dist/bulma-toast.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+        <script src="shared.js" defer></script>
+        <script src="main.js" defer></script>
+    </body>
+
+</html>
